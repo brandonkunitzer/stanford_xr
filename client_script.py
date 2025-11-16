@@ -14,7 +14,7 @@ DISPLAY_W, DISPLAY_H = 1920, 1080
 # Connect to Jetson
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 sock.connect((JETSON_IP, PORT))
-sock_file = sock.makefile("r")  # allows line-by-line reading
+sock_file = sock.makefile("r")  # allows line-by-line reading 
 
 window_name = "xreal_overlay"
 cv2.namedWindow(window_name, cv2.WINDOW_NORMAL)
