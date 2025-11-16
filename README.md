@@ -27,7 +27,7 @@ Optional/Helpful (not required by the current scripts):
   - Make sure firewall rules allow TCP connections on port 5005.
   - The Jetson hosts the server (`jetson_script.py`) and waits for the client to connect.
   - The client laptop (`client_script.py`) connects to the Jetson server.
-  - 
+  
 ### AI Tools
 - None currently integrated.
 
