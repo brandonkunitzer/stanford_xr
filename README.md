@@ -8,9 +8,7 @@
 - NumPy (`numpy`)
 
 Optional/Helpful (not required by the current scripts):
-- FFmpeg (device listing and media tooling)
-- imagesnap (macOS camera listing via Homebrew)
-- Ultralytics (`ultralytics`) for YOLO, if you later add IR detection
+- Ultralytics (`ultralytics`) for YOLO which is integrated, but not actively used.
 
 ### Assets and Hardware
 - Xreal glasses (black pixels appear transparent on display)
