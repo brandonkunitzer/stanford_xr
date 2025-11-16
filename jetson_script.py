@@ -98,7 +98,7 @@ def get_geoloc():
     try:
         url = "https://www.googleapis.com/geolocation/v1/geolocate"
         params = {
-            "key": "AIzaSyAW_bSqKvV8sI4WcwLZef9trbR6rWiYvok"
+            "key": ""
         }
         # Minimal payload: let Google use IP; add wifiAccessPoints/cellTowers if desired
         payload = {
