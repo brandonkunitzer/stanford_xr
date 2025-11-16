@@ -7,7 +7,7 @@ import time
 from typing import Tuple
 
 # --- CHANGE THIS TO YOUR JETSON IP ---
-JETSON_IP = "10.31.51.74"   # example; use your actual Jetson IP
+JETSON_IP = ""
 PORT = 5005
 
 # Define Panel Colors & Accents

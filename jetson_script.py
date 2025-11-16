@@ -4,7 +4,7 @@ import json
 import socket
 # from ultralytics import YOLO
 
-JETSON_IP = "10.31.51.74"      # listen on all interfaces
+JETSON_IP = ""      # listen on all interfaces
 PORT = 5005                # pick any open port
 CONF_THRESH = 0.5
 
