@@ -31,6 +31,9 @@ while True:
         continue
 
     boxes = data.get("boxes", [])
+   
+    heart_rate = data.get("heart_rate", 0)
+    cv.putText(canvas, f"Heart Rate: {heart_rate}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
 
     # 1) Make a PURE BLACK image (this is why the window is black)
     canvas = np.zeros((DISPLAY_H, DISPLAY_W, 3), dtype=np.uint8)
