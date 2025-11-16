@@ -2,7 +2,7 @@
 import cv2
 import json
 import socket
-from ultralytics import YOLO
+# from ultralytics import YOLO
 
 JETSON_IP = "10.31.51.74"      # listen on all interfaces
 PORT = 5005                # pick any open port
@@ -23,11 +23,11 @@ conn, addr = server_sock.accept()
 print(f"Client connected from {addr}")
 
 while True:
-    ret, frame = cap.read()
-    if not ret:
-        break
+    # ret, frame = cap.read()
+    # if not ret:
+    #     break
 
-    h, w = frame.shape[:2]
+    # h, w = frame.shape[:2]
     # results = model(frame, verbose=False)[0]
     # results = []
 
@@ -46,8 +46,9 @@ while True:
     #         "y2": y2 / h,
     #         "conf": conf
     #     })
+    heart_rate = random.randint(60, 100)
     boxes_out = [{"x1":0.3,"y1":0.3,"x2":0.6,"y2":0.7,"conf":0.9}]
-    msg = json.dumps({"boxes": boxes_out}) + "\n"
+    msg = json.dumps({"boxes": boxes_out, "heart_rate": heart_rate}) + "\n"
     try:
         conn.sendall(msg.encode("utf-8"))
     except BrokenPipeError:
